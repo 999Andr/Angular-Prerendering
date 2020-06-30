@@ -1,0 +1,23 @@
+<div class='toolbar'>
+  <nav>
+    <a routerLink="cars" routerLinkActive="active" >
+    cars</a>
+    <a routerLink="code" routerLinkActive="active" >
+    code</a>
+    <a routerLink="universal" routerLinkActive="active">
+    universal</a>
+  </nav>
+</div>
+
+<div class='rendering'>
+	
+	<h3 *ngIf='getTime()'><span>First Contentful Paint:</span> {{getTime()}}<i> ms</i></h3>
+		 
+	<app-show-rendering></app-show-rendering> 
+	
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="bottombar">
+</div>
